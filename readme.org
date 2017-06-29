@@ -9,7 +9,7 @@ You can run the demo of  test.py:
 python test.py
 #+END_SRC
 
-I have upload this package to pypi, so you can install it with:
+I have uploaded this package to pypi, so you can install it with:
 #+BEGIN_SRC shell
 pip install yson
 #+END_SRC
