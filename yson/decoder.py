@@ -216,22 +216,3 @@ class JSONDecoder(object):
         except StopIteration:
             raise ValueError("No JSON object could be decoded")
         return obj, end
-
-
-if __name__ == '__main__':
-    j = JSONDecoder()
-    a = j.decode('[12, 23, 45.3, "hello world", {"aaa": 123}]')
-    b = '''{
-    "name": "dai ying",
-    "age" : 20,
-    "family": {
-    "father": "Dai Hongjun",
-    "mother": "zhenbenying"
-    },
-    "hobby": ["game", "guitar", "Emacs"]}
-    '''
-    b = j.decode(b)
-    print type(a)
-    print a
-    print type(b)
-    print b
