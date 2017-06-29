@@ -2,13 +2,42 @@
 
 This JSON parser is just a demo, but most features of JSOΝ is supported.
 
-* How to use
+** How to use
 
 You can run the demo of  test.py:
 #+BEGIN_SRC python
 python test.py
 #+END_SRC
 
+I have upload this package to pypi, so you can install it with:
+#+BEGIN_SRC shell
+pip install yson
+#+END_SRC
 
-* In the future
+and
+
+#+BEGIN_SRC python
+yson.loads('{"test": 12345678}')
+#+END_SRC
+
+** How to distribute it to PyPI
+    - get account of PyPI and pypitest
+    - config ~/.pypirc with your user name and password
+    - upload it to test server
+    - upload it to PyPI
+
+    This is the command for test:
+    #+BEGIN_SRC shell
+    python setup.py register -r pypitest
+    python setup.py sdist upload -r pypitest
+    #+END_SRC
+
+    And this will upload the package to PyPI
+    #+BEGIN_SRC shell
+    python setup.py register -r pypi
+    python setup.py sdist upload -r pypi
+    #+END_SRC
+
+
+** In the future
 I will continue to imporve this demo.
